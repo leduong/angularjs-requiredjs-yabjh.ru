@@ -11,8 +11,8 @@ Required:
 Install Backend:
 
     Download package
-    $ git clone https://leduongcom@bitbucket.org/leduongcom/yabjh-angularjs-requirejs.git
-    $ cd yabjh-angularjs-requirejs
+    $ git https://github.com/leduong/angularjs-requiredjs-yabjh.ru.git
+    $ cd angularjs-requiredjs-yabjh.ru
 
     RUN HTTP SERVICE
     with node-static
@@ -26,6 +26,7 @@ Install Backend:
     
     With python 3.x, use:
     $ cd public;python -m http.server 8080
+    
     Open http://127.0.0.1:8080
 
 
