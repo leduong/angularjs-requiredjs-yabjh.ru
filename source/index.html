@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="" name="keywords"/>
+        <title>
+            yabjh.ru AngularJS RequireJS
+        </title>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css"/>
+        <!-- build:css({.tmp,source}) css/main.css -->
+        <link href="css/main.css" rel="stylesheet"/>
+        <!-- endbuild -->
+        <!-- build:css({.tmp,source}) css/vendor.css -->
+        <link href="/js/vendor/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+        <!-- endbuild -->
+    </head>
+    <body data-custom-background="" data-off-canvas-nav="" id="app">
+        <div id="messages" ng-controller="FlashCtrl">
+            <div class="alert alert-dismissable" ng-class="msg.class" ng-click="close(id);" ng-repeat="(id, msg) in messages">
+                <button aria-hidden="true" class="close" type="button">×</button>
+                <span ng-bind-html="msg.msg"></span>
+            </div>
+        </div>
+        <div ng-controller="AppCtrl">
+            <div class="no-print" data-ng-cloak="" data-ng-hide="isHide()">
+                <section app-header>
+                </section>
+                <aside app-nav>
+                </aside>
+            </div>
+            <div class="view-container">
+                <section class="animate-fade-up" data-ng-view="" id="content">
+                </section>
+            </div>
+        </div>
+    </body>
+    <script data-main="js/main" src="js/vendor/requirejs/require.js"></script>
+</html>

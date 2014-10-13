@@ -1,0 +1,64 @@
+<div class="page page-signup">
+	<div class="sign-up-container">
+		<div class="middle-sign-up">
+			<div class="block-flat">
+				<div>
+					<form class="form-horizontal" name="form" ng-submit="submit()" novalidate>
+						<div class="content">
+							<h5 class="title text-center"><strong>Sign Up</strong></h5>
+							<hr/>
+							<div class="form-group">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button class="btn btn-block btn-facebook bg btn-rad" type="button"><i class="fa fa-facebook"></i> Sign in with Facebook</button>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button class="btn btn-block btn-trans btn-twitter bg btn-rad" type="button"><i class="fa fa-twitter"></i> Sign in with Twitter</button>
+								</div>
+							</div>
+							<p class="text-center">Or</p>
+							
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group" ng-class="{'has-error': form.$dirty && form.username.$invalid}">
+										<span class="input-group-addon"><i class="fa fa-user"></i></span>
+										<input type="text" name="username" placeholder="Username" class="form-control" ng-model="user.username" required>
+									</div>
+									<div id="nick-error"></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group" ng-class="{'has-error': form.$dirty && form.email.$invalid}">
+										<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+										<input type="email" name="email" placeholder="E-mail" class="form-control" ng-model="user.email" required>
+									</div>
+									<div id="email-error"></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-6 col-xs-6">
+									<div class="input-group" ng-class="{'has-error': form.$dirty && form.password.$invalid}">
+										<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+										<input type="password" name="password" placeholder="Password" class="form-control" ng-model="user.password" required>
+									</div>
+									<div id="password-error"></div>
+								</div>
+								<div class="col-sm-6 col-xs-6">
+									<div class="input-group" ng-class="{'has-error': form.$dirty && form.confirmPassword.$invalid}">
+										<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+										<input type="password" name="confirmPassword" placeholder="Confirm Password" class="form-control" ng-model="user.confirmPassword" required>
+									</div>
+									<div id="confirmation-error"></div>
+								</div>
+							</div>
+							<p class="spacer">By creating an account, you agree with the <a href="#">Terms</a> and <a href="#">Conditions</a>.</p>
+							<button class="btn btn-block btn-success btn-rad btn-lg" type="submit">Sign Up</button>
+							
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="text-center out-links"><a href="#/home">&copy; 2014 yabih.ru</a></div>
+		</div>	
+	</div>
+</div>

@@ -1,0 +1,36 @@
+<div class="page page-signin">
+	<div class="sign-in-container">
+		<div class="middle-sign-in" ng-controller="SigninCtrl">
+			<div class="header">
+				<h3 class="text-center"><img class="logo-img" src="img/logo.png" alt="logo"/> yabjh.ru</h3>
+			</div>
+			<div>
+				<form class="form-horizontal" name="form" role="form" ng-submit="submit()">
+					<div class="content">
+						<h4 class="title">Login Access</h4>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user"></i></span>
+									<input type="text" placeholder="Username" ng-model="username" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+									<input type="password" placeholder="Password" ng-model="password" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<a class="btn btn-default" type="button" href="#/user/signup">Register</a>
+						<button class="btn btn-primary" type="submit">Log in</button>
+					</div>
+				</form>
+			</div>	
+		</div>		
+	</div>
+</div>
